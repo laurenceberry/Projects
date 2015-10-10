@@ -4,7 +4,9 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all
+    @projects = Project.where(project_type: 'project').all
+    @prototypes = Project.where(project_type: 'prototype').all
+    @products = Project.where(project_type: 'product').all
   end
 
   def show
@@ -48,7 +50,7 @@ end
 
 private
   def project_params
-    params.require(:project).permit(:title, :background, :project_description, :project_url)
+    params.require(:project).permit(:title, :background, :project_description, :project_url, :project_type)
   end
 
 end

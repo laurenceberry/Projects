@@ -27,4 +27,15 @@
   %br/
   = f.text_area :project_url
 
+  %h2 Type
+  %label
+    = f.radio_button :project_type, 'project'
+    Project
+  %label
+    = f.radio_button :project_type, 'prototype'
+    Prototype
+  %label
+    = f.radio_button :project_type, 'product'
+    Product
+
   = f.submit

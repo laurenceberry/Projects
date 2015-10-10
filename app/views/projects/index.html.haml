@@ -1,5 +1,15 @@
 %h1 All Projects
 
+
 -@projects.each do |project|
   %h2=project.title
   =link_to("View", project_path(project))
+
+-@prototypes.each do |project|
+  %h2=project.title
+  =link_to("View", project_path(project))
+
+-@products.each do |project|
+  %h2=project.title
+  =link_to("View", project_path(project))
+
