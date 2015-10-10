@@ -1,0 +1,69 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body
+  font-family: helvetica
+  font-size: 16px
+  padding: 0
+  margin: 0
+  color: #929292
+
+h1, h2, h3, h4, p
+  margin: 0
+h4
+  margin-bottom: 5px
+p
+  margin-bottom: 15px
+
+section:nth-child(odd)
+  background-color: #F3F3F3
+
+section
+  +span-columns(12)
+  .image, .text
+    padding: 50px 25px
+    +span-columns(6 of 12)
+    +omega()
+    height: 100%
+
+  .image
+    .title
+      color: #fff
+      background-color: #0096EF
+      padding: 2px 5px 3px 5px
+      display: inline
+      font-weight: 200
+      font-size: 1.4em
+
+  .text
+    #maintext, #runoff
+      +span-columns(3 of 6)
+
+.projects, .prototypes, .products
+  a
+    font-size: 0
+
+  .project
+    width: 33.33%
+    display: inline-block
+  .image, .text
+    width: 100%
+    font-size: 16px
+    min-height: 200px
+  .image
+    background-color: #0096EF
+    height: 200px
+    background-image: url("test.png")
+
+  a:nth-child(odd)
+    .image
+      background-image: url("test_2.jpg")
+
+  .text
+    height: 100px
+    padding: 25px
+
+.prototypes
+  .project
+    width: 25%
