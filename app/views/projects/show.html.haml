@@ -1,0 +1,14 @@
+%h1=@project.title
+
+%p=@project.background
+
+%p=@project.project_description
+
+=link_to("Link", :href => @project.project_url)
+
+
+.admin
+  = link_to 'Edit', edit_project_path(project)
+  = link_to 'Destroy', project_path(project), |
+      method: :delete,                          |
+      data: { confirm: 'Are you sure?' }        |
