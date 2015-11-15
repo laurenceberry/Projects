@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require text-overflow
+//= require repeatable_fields
 //= require_tree .

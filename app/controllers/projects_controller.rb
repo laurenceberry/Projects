@@ -50,7 +50,22 @@ end
 
 private
   def project_params
-    params.require(:project).permit(:title, :background, :project_description, :project_url, :project_type)
+    params.require(:project).permit(
+        :title,
+        :background,
+        :project_description,
+        :project_url,
+        :project_type,
+        blocks_attributes: [
+          :id,
+          :title,
+          :project_id,
+          :text_block,
+          :_destroy
+        ]
+    )
   end
+
+
 
 end

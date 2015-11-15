@@ -7,14 +7,18 @@ body
   font-size: 16px
   padding: 0
   margin: 0
-  color: #929292
+  font-weight: 200
 
 h1, h2, h3, h4, p
   margin: 0
+h3, h4
+  font-size: 1em
+  margin-bottom: 5px
+  font-weight: 500
 h4
   margin-bottom: 5px
 p
-  margin-bottom: 15px
+  font-weight: 200
 
 section:nth-child(odd)
   background-color: #F3F3F3
@@ -43,7 +47,7 @@ section
 .projects, .prototypes, .products
   a
     font-size: 0
-
+    color: #000
   .project
     width: 33.33%
     display: inline-block
@@ -54,7 +58,8 @@ section
   .image
     background-color: #0096EF
     height: 200px
-    background-image: url("test.png")
+    background-image: none
+    background-color: #27A2D9
 
   a:nth-child(odd)
     .image
@@ -63,6 +68,8 @@ section
   .text
     height: 100px
     padding: 25px
+
+
 
 .prototypes
   .project

@@ -10,32 +10,39 @@
         - @project.errors.full_messages.each do |msg|
           %li= msg
 
+  %fieldset
+    = f.label :title
+    %br/
+    = f.text_field :title
 
-  = f.label :title
-  %br/
-  = f.text_field :title
+    = f.label :background
+    %br/
+    = f.text_area :background
 
-  = f.label :background
-  %br/
-  = f.text_area :background
+    = f.label :project_description
+    %br/
+    = f.text_area :project_description
 
-  = f.label :project_description
-  %br/
-  = f.text_area :project_description
+    = f.label :project_url
+    %br/
+    = f.text_area :project_url
 
-  = f.label :project_url
-  %br/
-  = f.text_area :project_url
+  %fieldset
+    %h2 Type
+    %label
+      = f.radio_button :project_type, 'project'
+      Project
+    %label
+      = f.radio_button :project_type, 'prototype'
+      Prototype
+    %label
+      = f.radio_button :project_type, 'product'
+      Product
 
-  %h2 Type
-  %label
-    = f.radio_button :project_type, 'project'
-    Project
-  %label
-    = f.radio_button :project_type, 'prototype'
-    Prototype
-  %label
-    = f.radio_button :project_type, 'product'
-    Product
+  %fieldset
+    %br
+    = f.fields_for :blocks do |builder|
+      = render 'block_fields', f: builder
+    = link_to_add_fields "Add a section", f, :blocks
 
   = f.submit

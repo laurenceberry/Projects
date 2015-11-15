@@ -1,0 +1,8 @@
+%fieldset
+  %label Block title
+  = f.text_field :title
+  = f.label :_destroy, "Remove this block", :class => 'remove'
+  = f.check_box :_destroy, :class => 'remove'
+  %br
+  = f.text_area :text_block
+  %br
