@@ -1,45 +1,36 @@
 %section.introduction
-  .image
+  .section-inner
     %h1.title Laurence Berry
-  .text
-    #maintext
-      %h4 Intro
-      %p
-        Donec eget eros felis. Fusce risus nisi, sodales a tempus vitae, dictum ut nunc. Pellentesque vehicula purus in dui euismod eget vestibulum lacus sollicitudin. Nulla consectetur ultrices suscipit. Nam at lorem mauris. Sed ut lacus risus. Maecenas consequat porttitor orci vel facilisis. Nulla tempus ipsum nec magna gravida condimentum. Quisque sem urna, placerat at euismod vel, dapibus eget eros. Curabitur cursus, sapien ac iaculis gravida, velit ipsum malesuada ligula, quis interdum nunc risus ut magna. Nulla lobortis orci at ante bibendum aliquet at sed diam.
-
-      %h4 Intro
-      %p
-        Praesent vulputate neque eu purus tempor laoreet. Sed lacinia leo metus. Nulla nec magna at turpis tristique volutpat. Suspendisse eget tortor ac nisi pretium semper. In hac habitasse platea dictumst. Etiam  ut viverra lectus. In quam ligula, luctus nec tempus sed, euismod in tellus. Ut varius eleifend elementum. Suspendisse pulvinar metus ut orci vestibulum non interdum ante vulputate. Morbi cursus pellentesque arcu, nec semper justo luctus nec. Ut tincidunt ornare orci, posuere euismod nisl laoreet in.
-
-      %h4 Intro
-      %p
-        Nam dignissim vestibulum sapien vel fringilla. In eu purus nunc. Ut ac nisi nec tortor sagittis blandit. In aliquam sollicitudin pulvinar. Sed semper rhoncus vulputate. Ut id urna vitae nibh condimentum semper. Suspendisse in ipsum arcu, sit amet gravida elit. Duis dignissim mi mattis tellus aliquet vehicula. Vivamus luctus velit nec mi ullamcorper
-    #runoff
-
-%section.projects
-  -@projects.each do |project|
-    %a{href: project_path(project)}
-      .project
-        .image
-        .text
-          %h3=project.title
-          %p=truncate(project.background, length: 140)
-
-%section.prototypes
-  -@prototypes.each do |project|
-    %a{href: project_path(project)}
-      .project
-        .image
-        .text
-          %h3=project.title
-          %p=truncate(project.background, length: 140)
+    %h2 Digital product design and web development
 
 %section.products
-  -@products.each do |project|
-    %a{href: project_path(project)}
-      .project
-        .image
-        .text
-          %h3=project.title
-          %p=truncate(project.background, length: 140)
+  .section-inner
+    -@products.each do |project|
+      %a{href: project_path(project)}
+        .project
+          .image
+          .text
+            %h3=project.title
+            %p=truncate(project.background, length: 140)
+            %p.secondary=project.project_description
+            %p.secondary=project.project_url
 
+%section.prototypes
+  .section-inner
+    -@prototypes.each do |project|
+      %a{href: project_path(project)}
+        .project
+          .image
+          .text
+            %h3=project.title
+            %p=truncate(project.background, length: 140)
+
+%section.projects
+  .section-inner
+    -@projects.each do |project|
+      %a{href: project_path(project)}
+        .project
+          .image
+          .text
+            %h3=project.title
+            %p=truncate(project.background, length: 140)

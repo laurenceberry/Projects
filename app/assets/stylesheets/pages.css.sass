@@ -3,74 +3,58 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body
-  font-family: helvetica
+  font-family: "Source Sans Pro"
   font-size: 16px
   padding: 0
   margin: 0
   font-weight: 200
+  div
+    box-sizing: border-box
 
-h1, h2, h3, h4, p
-  margin: 0
-h3, h4
-  font-size: 1em
-  margin-bottom: 5px
-  font-weight: 500
-h4
-  margin-bottom: 5px
+h1
+  font-size: 1.8em
+  font-weight: 600
+  margin-bottom: 15px
+
+h2
+  font-size: 1.2em
+  font-weight: 400
+
+h3
+  margin: 0 0 10px 0
+  font-weight: 600
+
 p
-  font-weight: 200
+  margin: 0 0 15px 0
+  font-weight: 400
 
-section:nth-child(odd)
-  background-color: #F3F3F3
+p.secondary
+  font-weight: 200
+  margin-bottom: 3px
 
 section
+  width: 100%
+  display: inline-block
+  padding: 25px 25px
   +span-columns(12)
-  .image, .text
-    padding: 50px 25px
-    +span-columns(6 of 12)
-    +omega()
-    height: 100%
+  .section-inner
+    max-width: 1000px
+    margin: auto
 
-  .image
-    .title
-      color: #fff
-      background-color: #0096EF
-      padding: 2px 5px 3px 5px
-      display: inline
-      font-weight: 200
-      font-size: 1.4em
+section.introduction
+  background-color: #F5F5F5
+  padding: 50px 25px
 
-  .text
-    #maintext, #runoff
-      +span-columns(3 of 6)
-
-.projects, .prototypes, .products
+section
   a
-    font-size: 0
+    text-decoration: none
+    +span-columns(4 of 12)
+    +omega(3n)
+    margin-bottom: 25px
+  .project
+    padding: 15px
     color: #000
-  .project
-    width: 33.33%
-    display: inline-block
-  .image, .text
-    width: 100%
-    font-size: 16px
-    min-height: 200px
-  .image
-    background-color: #0096EF
-    height: 200px
-    background-image: none
-    background-color: #27A2D9
-
-  a:nth-child(odd)
-    .image
-      background-image: url("test_2.jpg")
-
-  .text
-    height: 100px
-    padding: 25px
-
-
-
-.prototypes
-  .project
-    width: 25%
+    text-decoration: none
+    border: 1px solid #000
+    p
+      width: 70%
