@@ -12,13 +12,14 @@ body
     box-sizing: border-box
 
 h1
-  font-size: 1.8em
+  font-size: 1.6em
   font-weight: 600
-  margin-bottom: 15px
+  margin-bottom: 10px
 
 h2
-  font-size: 1.2em
+  font-size: 1em
   font-weight: 400
+  margin-top: 0
 
 h3
   margin: 0 0 10px 0
@@ -43,7 +44,7 @@ section
 
 section.introduction
   background-color: #F5F5F5
-  padding: 50px 25px
+  padding: 25px 25px 50px 25px
 
 section
   a
@@ -58,3 +59,32 @@ section
     border: 1px solid #000
     p
       width: 70%
+    &:hover h3
+      text-decoration: underline
+
+
+header
+  background-color: #F5F5F5
+  padding: 15px 25px
+  text-align: right
+  .header-inner
+    max-width: 1000px
+    margin: auto
+  a
+    margin-left: 15px
+    text-decoration: none
+    color: #000
+    &:hover
+      text-decoration: underline
+  a.lang-en, a.lang-ja
+    padding: 3px
+    background-color: #fff
+    border-radius: 3px
+    &:hover
+      text-decoration: none
+      background-color: #FF4136
+      color: #fff
+  a.lang-en
+    padding: 2px 5px 3px 5px
+    &:hover
+      background-color: #0074D9

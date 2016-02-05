@@ -33,6 +33,8 @@ gem "paperclip", "~> 4.3"
 gem 'bourbon', '~> 3.2.3'
 gem 'neat'
 
+gem 'rails-i18n', '~> 4.0.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

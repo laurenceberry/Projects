@@ -9,4 +9,5 @@
     :javascript
       try{Typekit.load({ async: true });}catch(e){}
   %body
+    = render :partial => 'layouts/header'
     = yield
