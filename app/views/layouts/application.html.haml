@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Projects
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %script{:src => "https://use.typekit.net/yad6ssm.js"}
+    :javascript
+      try{Typekit.load({ async: true });}catch(e){}
+  %body
+    = yield
