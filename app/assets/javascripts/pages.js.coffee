@@ -9,15 +9,15 @@ $(document).ready ->
 
   $('a.intro.blink').click ->
     $(this).addClass('animated fadeOutUp')
-    $('p.about').slideDown()
+    $('p.about').slideDown('slow', 'swing')
 
   $('a.about.blink').click ->
     $(this).addClass('animated fadeOutUp')
-    $('p.skills').slideDown()
+    $('p.skills').slideDown('slow', 'swing')
 
   $('a.skills.blink').click ->
     $(this).addClass('animated fadeOutUp')
-    $('p.history').slideDown()
+    $('p.history').slideDown('slow', 'swing')
 
 
 

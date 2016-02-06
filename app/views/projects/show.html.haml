@@ -9,11 +9,12 @@
 - @project.blocks.each do |block|
   %section
     .section-inner
+      = image_tag block.image.url(:medium) unless block.image.blank?
       %h2=block.title
       %p=block.text_block
 
-/ .admin
-/   = link_to 'Edit', edit_project_path(@project)
-/   = link_to 'Destroy', project_path(@project), |
-/       method: :delete,                          |
-/       data: { confirm: 'Are you sure?' }        |
+.admin
+  = link_to 'Edit', edit_project_path(@project)
+  = link_to 'Destroy', project_path(@project), |
+      method: :delete,                          |
+      data: { confirm: 'Are you sure?' }        |

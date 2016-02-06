@@ -61,6 +61,7 @@ private
           :title,
           :project_id,
           :text_block,
+          :image,
           :_destroy
         ]
     )
