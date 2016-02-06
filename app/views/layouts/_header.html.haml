@@ -1,13 +1,20 @@
 %header
   .header-inner
-    -if t('lang') == 'English'
-      = link_to t('lang'), change_locale_path(:en), :class => 'lang-en'
-    -else
-      = link_to t('lang'), change_locale_path(:ja), :class => 'lang-ja'
+    .nav.animated.bounceIn
+      %a{:href => root_path}
+        .icon-long-arrow-left
+        %span=t('nav.back')
 
+    .name.animated.bounceIn
+      %a{:href => root_path}
+        =t('basic.name')
 
-    =link_to t('contact.message'), ""
-    =link_to t('contact.twitter'), "http://www.twitter.com/laurence_berry"
-    =link_to t('contact.github'), "http://www.github.com/laurenceberry"
+    .links
+      -if t('lang') == 'English'
+        = link_to t('lang'), change_locale_path(:en), :class => 'lang-en'
+      -else
+        = link_to t('lang'), change_locale_path(:ja), :class => 'lang-ja'
 
-  .nav
+      =link_to t('contact.message'), ""
+      =link_to t('contact.twitter'), "http://www.twitter.com/laurence_berry"
+      =link_to t('contact.github'), "http://www.github.com/laurenceberry"

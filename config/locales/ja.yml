@@ -5,6 +5,9 @@ ja:
     name: "ローレンス　ベリ"
     short_bio: "WEBデザイナーとデヴェロパー"
 
+  nav:
+    back: "帰り"
+
   contact:
     message: "メル"
     twitter: "ツウィート"

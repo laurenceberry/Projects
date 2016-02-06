@@ -1,14 +1,19 @@
-%h1=@project.title
+%section.overview
+  .section-inner
+    %h1=@project.title
 
-%p=@project.background
+    %p=truncate(@project.background, length: 140)
+    %p.secondary=@project.project_description
+    %p.secondary=@project.project_url
 
-%p=@project.project_description
+- @project.blocks.each do |block|
+  %section
+    .section-inner
+      %h2=block.title
+      %p=block.text_block
 
-=link_to("Link", :href => @project.project_url)
-
-
-.admin
-  = link_to 'Edit', edit_project_path(@project)
-  = link_to 'Destroy', project_path(@project), |
-      method: :delete,                          |
-      data: { confirm: 'Are you sure?' }        |
+/ .admin
+/   = link_to 'Edit', edit_project_path(@project)
+/   = link_to 'Destroy', project_path(@project), |
+/       method: :delete,                          |
+/       data: { confirm: 'Are you sure?' }        |

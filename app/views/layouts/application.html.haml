@@ -5,9 +5,10 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-    %script{:src => "https://use.typekit.net/yad6ssm.js"}
+    //%script{:src => "https://use.typekit.net/yad6ssm.js"}
+    %link{:href => "https://file.myfontastic.com/Lfvoi3zAfnoF3vzmNJBDBh/icons.css", :rel => "stylesheet"}/
     :javascript
       try{Typekit.load({ async: true });}catch(e){}
-  %body
+  %body{:class => "#{controller_name}", :id => "#{action_name}"}
     = render :partial => 'layouts/header'
     = yield

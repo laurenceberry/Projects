@@ -5,6 +5,9 @@ en:
     name: "Laurence Berry"
     short_bio: "Digital product designer and web developer"
 
+  nav:
+    back: "Go back"
+
   contact:
     message: "Message"
     twitter: "Twitter"
