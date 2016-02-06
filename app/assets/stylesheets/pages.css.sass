@@ -45,6 +45,7 @@ section
 section.introduction
   background-color: #F5F5F5
   padding: 25px 25px 50px 25px
+  line-height: 1.5em
 
 section
   a
@@ -62,6 +63,28 @@ section
     &:hover h3
       text-decoration: underline
 
+a.blink
+  padding: 0 3px
+  background-color: #fff
+  border-radius: 3px
+  width: auto
+  float: none
+  display: inline-block
+  margin-left: 10px
+  border: 1px solid lighten(#000, 80%)
+  clear: right
+  span
+    margin: 0
+    animation: blink 1.75s linear infinite
+    font-size: 1.2em
+
+@keyframes blink
+  50%
+    opacity: 0.0
+
+p.about, p.history, p.skills
+  +span-columns(8)
+  display: none
 
 header
   background-color: #F5F5F5
