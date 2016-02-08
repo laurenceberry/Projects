@@ -1,0 +1,22 @@
+section
+  width: 100%
+  display: inline-block
+  padding: 25px 25px
+  +span-columns(12)
+  .section-inner
+    max-width: 1000px
+    margin: auto
+  a
+    text-decoration: none
+    +span-columns(4 of 12)
+    +omega(3n)
+    margin-bottom: 25px
+  .project
+    padding: 15px
+    color: #000
+    text-decoration: none
+    border: 1px solid #000
+    p
+      width: 70%
+    &:hover h3
+      text-decoration: underline

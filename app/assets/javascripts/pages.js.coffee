@@ -21,3 +21,8 @@ $(document).ready ->
 
 
 
+  $('a.message').click ->
+    $('.contact-form').show().toggleClass('bounceInDown').toggleClass('bounceOutUp')
+
+  $('main, header.header-inner').click ->
+    $('.contact-form.bounceInDown').toggleClass('bounceInDown').toggleClass('bounceOutUp')

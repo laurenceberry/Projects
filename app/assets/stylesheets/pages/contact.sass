@@ -1,0 +1,44 @@
+.contact-form
+  +span-columns(6)
+  +shift(3)
+  padding: 25px
+  background-color: #007BB0
+  text-align: left
+  border-radius: 2px
+  color: #fff
+  border: 2px solid #F5F5F5
+  .field_with_errors
+    position: relative
+  abbr
+    display: none
+  label
+    width: 100%
+    display: block
+  input, textarea
+    width: 100%
+    -webkit-appearance: none
+    border: 1px solid #fff
+    color: #000
+    background-color: #F5F5F5
+    margin: 5px 0 15px 0
+    padding: 10px
+    border-radius: 2px
+  input.button
+    -webkit-appearance: none
+    border: none
+    width: auto
+    min-width: 150px
+    padding: 8px 10px
+    background-color: #fff
+    border-radius: 2px
+    &:hover
+      cursor: pointer
+  span.error
+    position: absolute
+    color: #FF4136
+    right: 15px
+    bottom: 23px
+
+body.contacts#new
+  header .contact-form
+    display: none !important

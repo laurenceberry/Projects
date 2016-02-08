@@ -15,6 +15,8 @@
       -else
         = link_to t('lang'), change_locale_path(:ja), :class => 'lang-ja'
 
-      =link_to t('contact.message'), ""
+      =link_to t('contact.message'), "javascript:;", :class => 'message'
       =link_to t('contact.twitter'), "http://www.twitter.com/laurence_berry"
       =link_to t('contact.github'), "http://www.github.com/laurenceberry"
+      .clear
+      =render :template => 'contacts/header_new'

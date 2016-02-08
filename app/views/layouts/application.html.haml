@@ -11,4 +11,4 @@
       try{Typekit.load({ async: true });}catch(e){}
   %body{:class => "#{controller_name}", :id => "#{action_name}"}
     = render :partial => 'layouts/header'
-    = yield
+    %main= yield
