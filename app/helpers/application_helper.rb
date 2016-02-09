@@ -32,4 +32,15 @@ module ApplicationHelper
     markdown.render(text).html_safe
   end
 
+  def image_class(block)
+    if block.image_tertiary.exists?
+      "tertiary"
+    elsif block.image_secondary.exists?
+      "secondary"
+    elsif block.image_primary.exists?
+      "primary"
+    else
+      "hide"
+    end
+  end
 end

@@ -1,0 +1,69 @@
+.projects#show
+  .nav
+    position: absolute
+    display: block
+    left: 0
+    top: 0
+    a
+      margin-left: 0
+    .icon-long-arrow-left
+      position: absolute
+      display: inline-block
+      top: 3px
+    span
+      padding-left: 25px
+
+  section:nth-child(odd)
+    background-color: #F5F5F5
+
+  section.overview
+    background-color: #0074D9
+    color: #fff
+    padding-bottom: 35px
+    a
+      color: #fff
+
+  .block
+    .image
+      overflow: hidden
+      display: inline-block
+      img
+        width: 100%
+
+    .image
+      .primary, .secondary, .tertiary
+        display: none
+        font-size: 0
+        float: left
+
+      .image-group
+        font-size: 0
+        float: left
+
+    .image.primary
+      .primary
+        display: block
+
+    .image.secondary
+      .primary, .image-group
+        width: 50%
+        display: block
+      .image-group .secondary
+        width: 100%
+        display: block
+
+    .image.tertiary
+      .primary, .secondary, .tertiary
+        display: inline-block
+    .image.tertiary
+      .primary
+        display: inline-block
+        width: 66.6666%
+      .image-group
+        display: inline-block
+        width: 33.3333%
+      .secondary, .tertiary
+        width: 100%
+
+    .section-inner
+      padding: 50px 25px 60px 25px

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160206074017) do
+ActiveRecord::Schema.define(version: 20160207121541) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,18 @@ ActiveRecord::Schema.define(version: 20160206074017) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "image_primary_file_name"
+    t.string   "image_primary_content_type"
+    t.integer  "image_primary_file_size"
+    t.datetime "image_primary_updated_at"
+    t.string   "image_secondary_file_name"
+    t.string   "image_secondary_content_type"
+    t.integer  "image_secondary_file_size"
+    t.datetime "image_secondary_updated_at"
+    t.string   "image_tertiary_file_name"
+    t.string   "image_tertiary_content_type"
+    t.integer  "image_tertiary_file_size"
+    t.datetime "image_tertiary_updated_at"
   end
 
   add_index "blocks", ["project_id"], name: "index_blocks_on_project_id", using: :btree

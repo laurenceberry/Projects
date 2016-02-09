@@ -7,9 +7,15 @@
     %p.secondary=@project.project_url
 
 - @project.blocks.each do |block|
-  %section
+  %section.block
+    - if block.image_primary.exists?
+      .image{:class => image_class(block)}
+        .primary= image_tag block.image_primary.url(:large)
+        .image-group
+          .secondary= image_tag block.image_secondary.url(:large)
+          .tertiary= image_tag block.image_tertiary.url(:large)
+
     .section-inner
-      = image_tag block.image.url(:medium) unless block.image.blank?
       %h2=block.title
       %p=block.text_block
 

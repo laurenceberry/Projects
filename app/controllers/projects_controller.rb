@@ -66,6 +66,9 @@ private
           :project_id,
           :text_block,
           :image,
+          :image_primary,
+          :image_secondary,
+          :image_tertiary,
           :_destroy
         ]
     )
