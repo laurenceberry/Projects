@@ -7,9 +7,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash.now[:notice] = "I've got it, speak soon :)"
+      flash.now[:notice] = t('flash.sent')
     else
-      flash.now[:error] = 'It wont send for some reason, you could try emailing me at berry.laur@gmail.com instead.'
+      flash.now[:error] = t('flash.not_sent')
       render :new
     end
   end

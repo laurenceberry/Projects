@@ -7,8 +7,20 @@ en:
 
   nav:
     back: "Go back"
+    send: "Send"
 
   contact:
     message: "Message"
     twitter: "Twitter"
     github: "Github"
+
+  simple_form:
+    labels:
+      defaults:
+        name: 'Your name'
+        email: "Your email"
+        message: "Your message"
+
+  flash:
+    send: "I've got it, speak soon"
+    not_sent: "It wont send for some reason, you could try emailing me at berry.laur@gmail.com instead."

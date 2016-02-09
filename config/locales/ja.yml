@@ -3,12 +3,24 @@ ja:
 
   basic:
     name: "ローレンス　ベリ"
-    short_bio: "WEBデザイナーとデヴェロパー"
+    short_bio: "WEBデザイナーとデヴェロパー。"
 
   nav:
     back: "帰り"
+    send: "送信"
 
   contact:
     message: "メル"
     twitter: "ツウィート"
     github: "ギツハブ"
+
+  simple_form:
+    labels:
+      defaults:
+        name: 'お舐め'
+        email: "E－メル"
+        message: "後に"
+
+  flash:
+    sent: "もらいました。"
+    not_sent: "もらいませんでした、berry.laur@gmail.comまでメールください"
