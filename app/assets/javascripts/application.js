@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require repeatable_fields
+//= require jquery.matchHeight
 //= require_tree .

@@ -4,6 +4,8 @@
 
 ready = ->
 
+  $('.project').matchHeight()
+
   $('a.intro.blink').delay(6000).queue ->
     $(this).addClass 'animated bounce'
 
