@@ -1,12 +1,19 @@
 header
   .contact-form
     display: none
-    width: 250px
+    width: 100%
     position: absolute
-    top: 50px
+    top: 68px
     right: 0
     color: #fff
     z-index: 10
+    +media($medium)
+      position: relative
+      margin: auto
+      right: auto
+    +media($small)
+      width: 250px
+      top: 50px
     input, textarea
       width: 100%
     span.error

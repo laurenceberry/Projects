@@ -8,9 +8,15 @@ section
     padding: 25px 25px
   a
     text-decoration: none
-    +span-columns(4 of 12)
-    +omega(3n)
+    +span-columns(12 of 12)
     margin-bottom: 25px
+    +media($medium)
+      +omega(2n)
+      +span-columns(6 of 12)
+    +media($large)
+      @include omega-reset(2n)
+      +omega(3n)
+      +span-columns(4 of 12)
   .project
     padding: 15px
     color: #000

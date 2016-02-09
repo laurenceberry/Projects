@@ -4,27 +4,33 @@ section.introduction
   line-height: 1.5em
 
 a.blink
-  padding: 0 3px
   background-color: #fff
-  border-radius: 3px
-  width: auto
   float: none
   display: inline-block
-  margin-left: 10px
-  border: 1px solid lighten(#000, 80%)
+  border-radius: 15px 15px 15px 2px
+  width: 25px
+  padding: 0 3px
+  margin-left: 3px
   clear: right
+  text-align: center
   span
-    margin: 0
+    position: relative
+    top: -4px
     animation: blink 1.75s linear infinite
-    font-size: 1.2em
+    font-size: 1em
+    letter-spacing: 0.05em
+    font-weight: 600
 
 @keyframes blink
   50%
     opacity: 0.0
 
 p.about, p.history, p.skills
-  +span-columns(8)
+  +span-columns(12 of 12)
   display: none
+  +media($small)
+    +span-columns(8 of 12)
+    display: none
 
 .projects#index
   .name, .nav

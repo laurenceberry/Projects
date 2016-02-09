@@ -16,6 +16,7 @@ header
     padding: 3px
     background-color: #fff
     border-radius: 3px
+    +prefixer (transition, all .2s ease, moz ms o webkit spec)
     &:hover
       text-decoration: none
       background-color: #FF4136
@@ -28,22 +29,34 @@ header
   .links
     text-align: right
     display: inline-block
-    position: absolute
-    right: 0
+    width: 100%
+    margin-top: 15px
+    text-align: center
+    +media($medium)
+      position: absolute
+      right: 0
+      margin-top: 0
+      text-align: right
+      width: auto
+
   .nav
-    display: none
     position: absolute
-    display: block
     left: 0
-    top: 0
     a
       margin-left: 0
     .icon-long-arrow-left
       position: absolute
-      display: inline-block
-      top: 3px
-    span
-      padding-left: 25px
+      background-color: #FFF
+      border-radius: 25px
+      padding-top: 4px
+      height: 25px
+      width: 25px
+      top: -2px
+      +prefixer (transition, all .2s ease, moz ms o webkit spec)
+      &:hover
+        +prefixer (transition, all .5s ease, moz ms o webkit spec)
+        width: 37px
+        margin-left: -12px
 
   .name
     margin: auto
