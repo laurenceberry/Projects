@@ -47,9 +47,9 @@
           .image
           .text
             %h2=project.title
-            %p=truncate(project.background, length: 140)
-            %p.secondary=project.project_description
-            %p.secondary=project.project_url
+            %p=truncate(project.intro, length: 140)
+            %p.secondary=project.role
+            %p.secondary=project.client
 
 %section.prototypes
   .section-inner
@@ -58,8 +58,10 @@
         .project
           .image
           .text
-            %h3=project.title
-            %p=truncate(project.background, length: 140)
+            %h2=project.title
+            %p=truncate(project.intro, length: 140)
+            %p.secondary=project.role
+            %p.secondary=project.client
 
 %section.projects
   .section-inner
@@ -68,5 +70,7 @@
         .project
           .image
           .text
-            %h3=project.title
-            %p=truncate(project.background, length: 140)
+            %h2=project.title
+            %p=truncate(project.intro, length: 140)
+            %p.secondary=project.role
+            %p.secondary=project.client

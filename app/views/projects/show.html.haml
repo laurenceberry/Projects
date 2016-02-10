@@ -2,9 +2,9 @@
   .section-inner
     %h1=@project.title
 
-    %p=truncate(@project.background, length: 140)
-    %p.secondary=@project.project_description
-    %p.secondary=@project.project_url
+    %p=truncate(@project.intro, length: 140)
+    %p.secondary=@project.role
+    %p.secondary=@project.client
 
 - @project.blocks.each do |block|
   %section.block
@@ -12,8 +12,8 @@
       .image{:class => image_class(block)}
         .primary= image_tag block.image_primary.url(:large)
         .image-group
-          .secondary= image_tag block.image_secondary.url(:large)
-          .tertiary= image_tag block.image_tertiary.url(:large)
+          .secondary= image_tag block.image_secondary.url(:medium)
+          .tertiary= image_tag block.image_tertiary.url(:medium)
 
     .section-inner
       %h2=block.title
