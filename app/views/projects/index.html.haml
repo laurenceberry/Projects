@@ -22,27 +22,27 @@
         %br
         %br
 
-        My background is graphic and communication design which eventually lead me to working on digital services and products. I’m confident talking to users and have experience running user testing sessions. I’m used to wire framing, creating quick mock ups and translating these ideas into user stories.
+        My background is #{link_to('graphic and communication design','http://cargocollective.com/laurenceberry', :target => 'blank')} which eventually lead me to working on digital services and products. I’m confident talking to users and have experience running user testing sessions. I’m used to wire framing, creating quick mock ups and translating these ideas into user stories.
         %a.skills.blink{:href => "javascript:;"}
           %span ...
 
       %p.history
-        I developed a keenness for learning new technologies during my interactive media course at college where we had to get to grips with many tools including Maya, the Adobe suite, photography and games engines.
+        I developed a keenness for learning new technologies during my interactive media course where we had to get to grips with many tools including Maya, the Adobe suite, photography and games engines.
         %br
         %br
 
-        I took a step back during my degree in graphic design to learn traditional techniques like screen printing and letterpress printing. During my postgraduate course in communication design I fell in love with conceptual studio work like Superstudio, Dunne & Raby and Superflux and learned that you can use design as research, put an artefact out in to the real world and see how people interact with it or how it can change behaviours.
+        I took a step back during my degree in graphic design to learn traditional techniques like screen printing and letterpress printing. I took a postgraduate course in communication design where I became facinated with conceptual studio work like Superstudio, Dunne & Raby and Superflux and learned that you can use design as research, put an artefact out in to the real world and see how people interact with it or how it can change behaviours.
         %br
         %br
 
-        I spent the next few years at FutureGov using design to help solve some of the incredible problems faced in government around adult social care. I don’t sit still much and love to get involved in hacks and rapid prototyping and have been lucky to work on projects with Rewired State, The Cabinet Office, IBM, Wired, Conde Nast, Digiotology, Goodyear, Wimbledon and the Emergency Medicine Conference.
+        I have spent the last few years at #{link_to('FutureGov','http://www.wearefuturegov.com/', :target => 'blank')} using design and digital to help solve some of the tough problems faced in governments around adult social care. I don’t sit still much and love to get involved in hacks and rapid prototyping and have been lucky to work on projects with Rewired State, The Cabinet Office, IBM, Wired, Conde Nast, Digiotology, Goodyear, Wimbledon and the Emergency Medicine Conference.
     .drawing
 
 
 %section.products
   .section-inner
     -@products.each do |project|
-      %a{href: project_path(project)}
+      %a.project-wrap{href: project_path(project)}
         .project
           .image
           .text
@@ -51,10 +51,9 @@
             %p.secondary=project.role
             %p.secondary=project.client
 
-%section.prototypes
-  .section-inner
+
     -@prototypes.each do |project|
-      %a{href: project_path(project)}
+      %a.project-wrap{href: project_path(project)}
         .project
           .image
           .text
@@ -63,10 +62,9 @@
             %p.secondary=project.role
             %p.secondary=project.client
 
-%section.projects
-  .section-inner
+
     -@projects.each do |project|
-      %a{href: project_path(project)}
+      %a.project-wrap{href: project_path(project)}
         .project
           .image
           .text
