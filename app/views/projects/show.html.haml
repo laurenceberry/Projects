@@ -2,7 +2,7 @@
   .section-inner
     %h1=@project.title
 
-    %p=truncate(@project.intro, length: 140)
+    %p=@project.intro
     %p.secondary=@project.role
     %p.secondary=@project.client
 

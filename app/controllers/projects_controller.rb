@@ -56,9 +56,9 @@ private
   def project_params
     params.require(:project).permit(
         :title,
-        :background,
-        :project_description,
-        :project_url,
+        :intro,
+        :role,
+        :client,
         :project_type,
         blocks_attributes: [
           :id,
