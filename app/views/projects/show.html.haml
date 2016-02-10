@@ -17,7 +17,7 @@
 
     .section-inner
       %h2=block.title
-      %p=block.text_block
+      %p=markdown(block.text_block)
 
 .admin
   = link_to 'Edit', edit_project_path(@project)
