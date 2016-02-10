@@ -1,22 +1,27 @@
 section.introduction
-  background-color: #F0F0F0
+  background-color: #F9F9F9
   padding: 25px 25px 50px 25px
   line-height: 1.5em
+  position: relative
+  z-index: -1
 
 a.blink
   background-color: #fff
+  color: #1EA7E3
+  border: 1px solid lighten(#1EA7E3, 15%)
   float: none
   display: inline-block
-  border-radius: 15px 15px 15px 2px
-  width: 25px
+  border-radius: 15px 15px 15px 3px
+  width: 27px
+  height: 20px
   padding: 0 3px
   margin-left: 3px
   clear: right
   text-align: center
   span
     position: relative
-    top: -4px
-    animation: blink 1.75s linear infinite
+    top: -7px
+    animation: blink 2s linear infinite
     font-size: 1em
     letter-spacing: 0.05em
     font-weight: 600
@@ -25,13 +30,23 @@ a.blink
   50%
     opacity: 0.0
 
-p.about, p.history, p.skills
+.copy
   +span-columns(12 of 12)
-  display: none
   +media($small)
     +span-columns(8 of 12)
+  p.about, p.history, p.skills
     display: none
-
+    +media($small)
+      display: none
+.drawing
+  height: 150px
+  background-repeat: no-repeat
+  +span-columns(4 of 12)
+  background-image: url(/assets/test.png)
+  background-position: center top
+  position: absolute
+  bottom: 0
+  right: 0
 .projects#index
   .name, .nav
     display: none
