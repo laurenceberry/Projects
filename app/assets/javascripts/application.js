@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require analytics
 //= require turbolinks
 //= require repeatable_fields
 //= require jquery.matchHeight
