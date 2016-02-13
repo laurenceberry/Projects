@@ -19,8 +19,8 @@
       %h2=block.title
       %p=markdown(block.text_block)
 
-.admin
-  = link_to 'Edit', edit_project_path(@project)
-  = link_to 'Destroy', project_path(@project), |
-      method: :delete,                          |
-      data: { confirm: 'Are you sure?' }        |
+/ .admin
+/   = link_to 'Edit', edit_project_path(@project)
+/   = link_to 'Destroy', project_path(@project), |
+/       method: :delete,                          |
+/       data: { confirm: 'Are you sure?' }        |
