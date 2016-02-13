@@ -9,25 +9,29 @@ en:
         Hi, I’m Laurence, a designer who codes. I love tech, science and cities.
         <br/>
         <br/>
-        Over the past few years I’ve worked in diverse product teams on both web development
-        and user experience projects. I’m passionate about accessibility, research driven design
-        and development and really understanding users needs to develop useful prototypes and digital services.
+        I’ve worked in diverse product teams on both web development
+        and user experience projects. I think alot about accessibility, research driven design
+        and development and I think it's important really understand users needs to develop useful
+        prototypes and digital services.
 
       bio_2: >
-        I've been developing Ruby on Rails web apps for over three years and am used to working within
+        I've been developing Ruby on Rails web apps for three years and am used to working within
         agile teams practicing behaviour driven development.
         <br/>
         <br/>
         My background is %{href} which eventually lead me to working on digital services and products. I’m confident talking to users
-        and have experience running user testing sessions. I’m used to wire framing, creating quick mock ups and
-        translating these ideas into user stories.
+        and have experience running user testing sessions. I’m used to user journey mapping, wireframing, creating quick mock ups and
+        communicating these ideas through to development.
+
       bio_3: >
-        I developed a keenness for learning new technologies during my interactive media course where we had
-        to get to grips with many tools including Maya, the Adobe suite, photography and games engines.
+        I developed a keenness for learning new technologies during an interactive media and games design course where I
+        got to grips with tools like Maya, the Adobe suite, photography and games engines early on.
         <br/>
         <br/>
-        I took a step back during my degree in graphic design to learn traditional techniques like screen
-        printing and letterpress printing. I took a postgraduate course in communication design where I became facinated with conceptual studio work like Superstudio, Dunne & Raby and Superflux and learned that you can use design as research, put an artefact out in to the real world and see how people interact with it or how it can change behaviours.
+        I took a step back during my graphic design degree to practice traditional techniques like screen
+        printing and letterpress printing. I took a postgraduate course in communication design where I became facinated with conceptual
+        studio work from Superstudio, Dunne & Raby and Superflux Labs and learned that you can use design as research,
+        put an artefact out in to the real world and see how people interact with it or how it can change behaviours.
         <br/>
         <br/>
         I have spent the last few years at %{href} using design and digital
