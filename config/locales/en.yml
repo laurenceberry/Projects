@@ -3,7 +3,42 @@ en:
 
   basic:
     name: "Laurence Berry"
-    short_bio: "Digital product designer and web developer"
+    short_bio:
+      intro: "Digital product designer and web developer"
+      bio_1: >
+        Hi, I’m Laurence, a designer who codes. I love tech, science and cities.
+        <br/>
+        <br/>
+        Over the past few years I’ve worked in diverse product teams on both web development
+        and user experience projects. I’m passionate about accessibility, research driven design
+        and development and really understanding users needs to develop useful prototypes and digital services.
+
+      bio_2: >
+        I've been developing Ruby on Rails web apps for over three years and am used to working within
+        agile teams practicing behaviour driven development.
+        <br/>
+        <br/>
+        My background is %{href} which eventually lead me to working on digital services and products. I’m confident talking to users
+        and have experience running user testing sessions. I’m used to wire framing, creating quick mock ups and
+        translating these ideas into user stories.
+      bio_3: >
+        I developed a keenness for learning new technologies during my interactive media course where we had
+        to get to grips with many tools including Maya, the Adobe suite, photography and games engines.
+        <br/>
+        <br/>
+        I took a step back during my degree in graphic design to learn traditional techniques like screen
+        printing and letterpress printing. I took a postgraduate course in communication design where I became facinated with conceptual studio work like Superstudio, Dunne & Raby and Superflux and learned that you can use design as research, put an artefact out in to the real world and see how people interact with it or how it can change behaviours.
+        <br/>
+        <br/>
+        I have spent the last few years at %{href} using design and digital
+        to help solve some of the tough problems faced in governments around adult social care. I don’t sit
+        still much and love to get involved in hacks and rapid prototyping and have been lucky to work on
+        projects with Rewired State, The Cabinet Office, IBM, Wired, Conde Nast, Digiotology, Goodyear,
+        Wimbledon and the Emergency Medicine Conference.
+
+      cargo_collective_href: graphic and communication design
+      futuregov_href: FutureGov
+
 
   nav:
     back: "Go back"

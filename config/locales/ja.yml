@@ -3,7 +3,26 @@ ja:
 
   basic:
     name: "ローレンス　ベリ"
-    short_bio: "WEBデザイナーとデヴェロパー。"
+    short_bio:
+      intro: "WEBデザイナーとデヴェロパー。"
+      bio_1: >
+        初めましてロレンスです。私はデザイナーとデヴェロパーをしています。
+        <br/>
+        かがくとぎじゅつがすきです。すぬんWEBとUXをしていました。私はアクセスビリチとけんきゅうにきょうみをもっていいます。
+        そして人をわかってがすきです。
+
+      bio_2: >
+        私はRUBY ON RAILSデヴェロパー。
+        <br/>
+        大学でグラフィックデザインをベンキョしました。それからマスターズのコムニケションのデザインでした。
+        SUPERSTUDIOとDUNNE&RABYとSUPERFLUXがすきでした。
+      bio_3: >
+        ロンドンで%{href}につとめています。
+        <br/>
+        ハクスにいます。元気な人から。
+        REWIRED STATEとCABINET OFFICEとDIGIOTOLOGYにつとめていました。IBMとWIREDにつとめていました。
+
+      futuregov_href: FUTUREGOV
 
   nav:
     back: "帰り"
