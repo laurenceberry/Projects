@@ -1,0 +1,7 @@
+%a.project-wrap{href: project_path(project)}
+  .project
+    .text
+      %h2=project.title
+      %p=truncate(project.intro, length: 140)
+      %p.secondary=project.role
+      %p.secondary=project.client
