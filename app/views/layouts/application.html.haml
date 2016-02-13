@@ -4,6 +4,7 @@
     %title Projects
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = favicon_link_tag "favicon.ico"
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     = csrf_meta_tags
     %link{:href => "https://file.myfontastic.com/Lfvoi3zAfnoF3vzmNJBDBh/icons.css", :rel => "stylesheet"}/
@@ -13,3 +14,4 @@
     = render :partial => 'layouts/header'
     %main= yield
     = render :partial => 'layouts/google_analytics'
+    .overlay

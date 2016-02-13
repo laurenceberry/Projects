@@ -1,3 +1,14 @@
+.overlay
+  display: none
+  background-color: #fff
+  opacity: 0.7
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 2
+
 section
   width: 100%
   display: inline-block
@@ -23,6 +34,7 @@ section
     padding: 15px
     color: #000
     text-decoration: none
-    border: 1px solid #1EA7E3
+    border: 1px solid $primary
+    border-radius: 1px
     &:hover h2
       text-decoration: underline

@@ -25,9 +25,11 @@ ready = ->
 
   $('a.message').click ->
     $('.contact-form').show().toggleClass('bounceInDown').toggleClass('bounceOutUp')
+    $('.overlay').fadeToggle()
 
-  $('main, header.header-inner').click ->
+  $('.overlay').click ->
     $('.contact-form.bounceInDown').toggleClass('bounceInDown').toggleClass('bounceOutUp')
+    $('.overlay').fadeToggle()
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

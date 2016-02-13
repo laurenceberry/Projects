@@ -1,14 +1,16 @@
 section.introduction
-  background-color: #F9F9F9
+  background-color: $background
   padding: 25px 25px 50px 25px
   line-height: 1.5em
-  position: relative
   z-index: -1
+  overflow: hidden
+  .section-inner
+    position: relative
 
   a.blink
     background-color: #fff
-    color: #1EA7E3
-    border: 1px solid lighten(#1EA7E3, 15%)
+    color: $primary
+    border: 1px solid lighten($primary, 15%)
     float: none
     text-decoration: none
     display: inline-block
@@ -27,6 +29,22 @@ section.introduction
       letter-spacing: 0.05em
       font-weight: 600
 
+  .illustration
+    background-color: #fff
+    border-radius: 150px
+    background-repeat: no-repeat
+    background-image: url(/assets/illustration_b.png)
+    background-size: 100%
+    background-position: center top
+    width: 100px
+    height: 100px
+    position: absolute
+    top: 25px
+    right: 0
+    display: block
+    @media (max-width: 480px)
+      display: none
+
 @keyframes blink
   50%
     opacity: 0.0
@@ -44,7 +62,7 @@ section.introduction
   .name, .nav
     display: none
   .overview
-    background-color: #007BB0
+    background-color: $background_dark
     color: #fff
     padding-bottom: 45px
     a

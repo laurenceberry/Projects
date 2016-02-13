@@ -3,18 +3,15 @@ header
     display: none
     width: 100%
     position: absolute
-    top: 68px
+    top: 50px
     right: 0
     color: #fff
     z-index: 10
-    +media($medium)
-      position: relative
-      margin: auto
-      right: auto
-      top: 20px
     +media($small)
       width: 250px
     input, textarea
       width: 100%
+    textarea
+      min-height: 100px
     span.error
       display: none
