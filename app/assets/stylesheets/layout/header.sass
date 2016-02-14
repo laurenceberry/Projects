@@ -1,13 +1,14 @@
 header
   background-color: $background
   padding: 15px 25px
-  text-align: center
   .header-inner
     max-width: 1000px
     margin: auto
     position: relative
+    text-align: center
+    +media($medium)
+      text-align: left
   a
-    margin-left: 15px
     text-decoration: none
     color: #000
     &:hover
@@ -25,27 +26,11 @@ header
       margin-top: 0
       text-align: right
       width: auto
-
-  .nav
-    position: absolute
-    left: 0
     a
-      margin-left: 0
-    .icon-long-arrow-left
-      position: absolute
-      background-color: #fff
-      border-radius: 25px
-      padding-top: 4px
-      height: 25px
-      width: 25px
-      top: -2px
-      +prefixer (transition, all .2s ease, moz ms o webkit spec)
-      &:hover
-        +prefixer (transition, all 1.5s ease, moz ms o webkit spec)
-        width: 45px
-        margin-left: -20px
+      margin-left: 15px
+      &:first-child
+        margin-left: 0
 
   .name
-    margin: auto
     display: inline-block
     font-weight: 600
