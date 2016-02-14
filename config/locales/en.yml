@@ -9,19 +9,22 @@ en:
         Hi, I’m Laurence, a designer who codes. I love tech, science and cities.
         <br/>
         <br/>
-        I’ve worked in diverse product teams on both web development
-        and user experience projects. I think alot about accessibility, research driven design
-        and development and I think it's important really understand users needs to develop useful
-        prototypes and digital services.
+        I’ve worked in diverse teams on both web development and user experience projects.
+        I think a lot about accessibility, research driven design and development and
+        I think it's important to really understand users needs to develop useful prototypes
+        and digital services.
 
       bio_2: >
-        I've been developing Ruby on Rails web apps for three years and am used to working within
-        agile teams practicing behaviour driven development.
+        I've been developing Ruby on Rails web apps since 2013 and am used to working within agile teams
+        practicing behaviour driven development.
         <br/>
         <br/>
-        My background is %{href} which eventually lead me to working on digital services and products. I’m confident talking to users
-        and have experience running user testing sessions. I’m used to user journey mapping, wireframing, creating quick mock ups and
-        communicating these ideas through to development.
+        My background is %{href} and a desire to use design to positively affect people’s lives
+        lead me to working on digital services and products. I’m confident conducting user research
+        and have experience running user testing sessions. I’m used to journey mapping, wireframing,
+        creating quick mockups and communicating these ideas to the team and stakeholders through to
+        development.
+
 
       bio_3: >
         I developed a keenness for learning new technologies during an interactive media and games design course where I
@@ -36,9 +39,9 @@ en:
         <br/>
         I have spent the last few years at %{href} using design and digital
         to help solve some of the tough problems faced in governments around adult social care. I don’t sit
-        still much and love to get involved in hacks and rapid prototyping and have been lucky to work on
-        projects with Rewired State, The Cabinet Office, IBM, Wired, Conde Nast, Digiotology, Goodyear,
-        Wimbledon and the Emergency Medicine Conference.
+        still much and love to get involved in hacks and rapid prototyping and have worked as part of
+        Rewired State with clients including The Cabinet Office, IBM, Wired, Conde Nast, Goodyear, Wimbledon and more
+        recently as part of Digiotology at the Emergency Medicine Conference.
 
       cargo_collective_href: graphic and communication design
       futuregov_href: FutureGov
