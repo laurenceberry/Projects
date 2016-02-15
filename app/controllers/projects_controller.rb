@@ -1,7 +1,6 @@
 class ProjectsController < ApplicationController
 
-  http_basic_authenticate_with name: "laurence", password: "wMgidV6ADgoZh2", except: [:index, :show]
-
+  http_basic_authenticate_with name: ENV['HTTP_USER'], password: ENV['HTTP_PASS'], except: [:index, :show]
 
   def index
     @projects = Project.where(project_type: 'project').all
@@ -35,22 +34,24 @@ class ProjectsController < ApplicationController
     end
   end
 
-def update
-  @project = Project.find(params[:id])
+  def update
+    @project = Project.find(params[:id])
 
-  if @project.update(project_params)
-    redirect_to @project
-  else
-    render 'edit'
+    if @project.update(project_params)
+      redirect_to @project
+    else
+      render 'edit'
+    end
   end
-end
 
-def destroy
-  @project = Project.find(params[:id])
-  @project.destroy
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
 
-  redirect_to projects_path
-end
+    redirect_to projects_path
+  end
+
+
 
 private
   def project_params
