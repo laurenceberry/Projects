@@ -6,7 +6,7 @@ en:
     short_bio:
       intro: "Digital product designer and web developer"
       bio_1: >
-        Hi, I’m Laurence, a designer who codes. I love tech, science and cities.
+        Hi, I’m Laurence, a designer who writes code. I love tech, science and cities.
         <br/>
         <br/>
         I’ve worked in diverse teams on both web development and user experience projects.
@@ -64,5 +64,5 @@ en:
         message: "Your message"
 
   flash:
-    send: "I've got it, speak soon"
+    sent: "I've got it, speak soon"
     not_sent: "It wont send for some reason, you could try emailing me at berry.laur@gmail.com instead."
