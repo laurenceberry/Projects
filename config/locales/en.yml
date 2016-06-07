@@ -6,29 +6,24 @@ en:
     short_bio:
       intro: "Digital product designer and web developer"
       bio_1: >
-        Hi, I’m Laurence, a designer who writes code. I love tech, science and cities.
+        Hi, I'm a designer in government. I love tech, science and cities.
         <br/>
         <br/>
-        I’ve worked in diverse teams on both web development and user experience projects.
-        I think a lot about accessibility, research driven design and development and
-        I think it's important to really understand users needs to develop useful prototypes
+        I work on web development and interaction design projects.
+        I think a lot about accessibility, research driven design and development
+        it's important to really understand users needs to develop useful prototypes
         and digital services.
 
       bio_2: >
-        I've been developing Ruby on Rails web apps since 2013 and am used to working within agile teams
-        practicing behaviour driven development.
+        I've been developing Ruby on Rails web apps since 2013 and am used to working within agile teams.
         <br/>
         <br/>
-        My background is %{href} and a desire to use design to positively affect people’s lives
-        lead me to working on digital services and products. I’m confident conducting user research
-        and have experience running user testing sessions. I’m used to journey mapping, wireframing,
-        creating quick mockups and communicating these ideas to the team and stakeholders through to
-        development.
-
+        My background is %{href} a need to use design to positively affect people’s lives
+        lead me to working on public digital services and products.
 
       bio_3: >
-        I developed a keenness for learning new technologies during an interactive media and games design course where I
-        got to grips with tools like Maya, the Adobe suite, photography and games engines early on.
+        I got hooked on interesting technologies during an interactive media and games design course where I
+        was given free reign to play with tools like Maya, photography and games engines early on.
         <br/>
         <br/>
         During my graphic design degree I explored some traditional techniques like screen
@@ -39,9 +34,11 @@ en:
         <br/>
         I have spent the last few years at %{href} using design and digital
         to help solve some of the tough problems faced in governments around adult social care. I don’t sit
-        still much and love to get involved in hacks and rapid prototyping and have worked as part of
-        Rewired State with clients including The Cabinet Office, IBM, Wired, Conde Nast, Goodyear, Wimbledon and more
-        recently as part of Digiotology at the Emergency Medicine Conference.
+        still much and love to get involved in hacks and rapid prototyping and have worked with
+        Rewired State and Rebel Labs with clients including The Cabinet Office, IBM, Wired, Conde Nast, Goodyear, Wimbledon.
+        <br/>
+        <br/>
+        I'm now working as a designer in government at the Government Digital Service.
 
       cargo_collective_href: graphic and communication design
       futuregov_href: FutureGov
