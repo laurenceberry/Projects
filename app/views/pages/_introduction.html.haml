@@ -8,7 +8,7 @@
           %span ...
 
       %p.about
-        =t('basic.short_bio.bio_1').html_safe
+        =t('basic.short_bio.bio_1', :href => link_to(t("basic.short_bio.gds_href"), 'http://www.gov.uk/', :target => 'blank')).html_safe
         %a.about.blink{:href => "javascript:;"}
           %span ..
 

@@ -6,36 +6,19 @@ en:
     short_bio:
       intro: "Digital product designer and web developer"
       bio_1: >
-        Hi, I'm a designer in government. I love tech, science and cities.
-        <br/>
-        <br/>
-        I think a lot about accessibility, research driven design and development. I think 
-        it's important to really understand users needs to develop useful prototypes
-        and digital services.
-
+        Hi, I'm a designer at the UK %{href} helping to build simpler, clearer, faster services.
+        I think a lot about accessibility and research led design and development. It's important to really
+        understand user's needs to develop useful prototypes and digital services.
       bio_2: >
         My background is %{href}, a need to use design to positively affect people’s lives
-        lead me to working on public digital services and products. 
+        lead me to working on digital public services and products.
 
       bio_3: >
-        I've been hooked on interesting technologies since studying interactive media and games design where I
-        was given free reign to play with tools like Maya, photography and games engines early on.
-        <br/>
-        <br/>
-        During my graphic design degree I explored some traditional techniques like screen
-        printing and letterpress printing. I took a postgraduate course in communication design where I became facinated with conceptual
-        studio work from Superstudio, Dunne & Raby and Superflux Labs and learned that you can use design as research,
-        put an artefact out in to the real world and see how people interact with it or how it can change behaviours.
-        <br/>
-        <br/>
-        I have spent the last few years at %{href} using design and digital
-        to help solve some of the tough problems faced in governments around adult social care. I don’t sit
-        still much and love to get involved in hacks and rapid prototyping and have worked with
-        Rewired State and Rebel Labs with clients including The Cabinet Office, IBM, Wired, Conde Nast, Goodyear, Wimbledon.
-        <br/>
-        <br/>
-        I'm now working as a designer in government at the Government Digital Service.
+        I have spent the last few years with %{href} using design and digital
+        to approach some of the tough problems faced by governments, and citizens around adult social care. I've been involved
+        in hacks and rapid prototyping with Rewired State and Rebel Labs for clients including The Cabinet Office, IBM, Wired, Conde Nast, Goodyear, Wimbledon.
 
+      gds_href: Government Digital Service
       cargo_collective_href: graphic and communication design
       futuregov_href: FutureGov
 
