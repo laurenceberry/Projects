@@ -4,11 +4,8 @@
       %a{:href => root_path}
         =t('basic.name')
 
-    .links
-      -if t('lang') == 'English'
-        = link_to t('lang'), change_locale_path(:en), :class => 'lang-en'
-      -else
-        = link_to t('lang'), change_locale_path(:ja), :class => 'lang-ja'
-
-      =link_to t('contact.twitter'), "http://www.twitter.com/laurence_berry"
-      =link_to t('contact.github'), "http://www.github.com/laurenceberry"
+    / .links
+    /   -if t('lang') == 'English'
+    /     = link_to t('lang'), change_locale_path(:en), :class => 'lang-en'
+    /   -else
+    /     = link_to t('lang'), change_locale_path(:ja), :class => 'lang-ja'

@@ -32,6 +32,7 @@ ja:
     message: "メル"
     twitter: "ツウィート"
     github: "ギツハブ"
+    email: "berry.laur@gmail.com"
 
   simple_form:
     labels:

@@ -13,12 +13,6 @@ section
   width: 100%
   display: inline-block
   +span-columns(12)
-  .section-inner
-    max-width: 1000px
-    margin: auto
-    padding: 25px 25px
-    @media (min-width: 1045px)
-      padding: 25px 0
   a.project-wrap
     text-decoration: none
     +span-columns(12 of 12)
@@ -38,3 +32,10 @@ section
     border-radius: 1px
     &:hover h2
       text-decoration: underline
+
+.section-inner
+  max-width: 1000px
+  margin: auto
+  padding: 25px 25px
+  @media (min-width: 1045px)
+    padding: 25px 0
