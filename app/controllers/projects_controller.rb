@@ -6,22 +6,18 @@ class ProjectsController < ApplicationController
     @projects = Project.where(project_type: 'project').all
     @prototypes = Project.where(project_type: 'prototype').all
     @products = Project.where(project_type: 'product').all
-    @contact = Contact.new
   end
 
   def show
     @project = Project.find(params[:id])
-    @contact = Contact.new
   end
 
   def new
     @project = Project.new
-    @contact = Contact.new
   end
 
   def edit
     @project = Project.find(params[:id])
-    @contact = Contact.new
   end
 
   def create

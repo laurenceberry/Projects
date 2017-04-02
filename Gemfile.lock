@@ -182,6 +182,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mail_form
+  mime-types (< 3)
   neat
   paperclip (~> 4.3)
   pg
@@ -197,5 +198,8 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   unicorn
 
+RUBY VERSION
+   ruby 1.9.3p551
+
 BUNDLED WITH
-   1.10.6
+   1.14.6
