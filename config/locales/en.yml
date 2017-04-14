@@ -4,11 +4,8 @@ en:
   basic:
     name: "Laurence Berry"
     short_bio:
-      intro: "Digital product designer and web developer"
-      bio_1: >
-        Hi, I'm a designer at the UK %{href} helping to build simpler, clearer, faster services.
-        I think a lot about accessibility and research led design and development. It's important to really
-        understand user's needs to develop useful prototypes and digital services.
+      intro: >
+        I’m Laurence, a product designer working at the %{href} helping government build usable services for people.
       bio_2: >
         My background is %{href}, a need to use design to positively affect people’s lives
         lead me to working on digital public services and products.

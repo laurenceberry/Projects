@@ -1,70 +1,9 @@
-section.introduction
-  background-color: $background
-  padding: 25px 25px 50px 25px
-  line-height: 1.5em
-  z-index: -1
-  overflow: hidden
-  .section-inner
-    position: relative
-
-  a.blink
-    background-color: #fff
-    color: $primary
-    border: 1px solid $primary
-    float: none
-    text-decoration: none
-    display: inline-block
-    border-radius: 15px 15px 15px 3px
-    width: 30px
-    height: 22px
-    padding: 0 2px
-    line-height: 20px
-    margin-left: 5px
-    clear: right
-    text-align: center
-    span
-      position: relative
-      top: -5px
-      animation: blink 2s linear infinite
-      font-size: 1em
-      letter-spacing: 0.05em
-      font-weight: 600
-
-  .illustration
-    background-color: #fff
-    border-radius: 150px
-    background-repeat: no-repeat
-    background-image: image-url("illustration_b.png")
-    background-size: 100%
-    background-position: center top
-    width: 125px
-    height: 125px
-    position: absolute
-    top: 25px
-    right: 15px
-    display: block
-    @media (max-width: 480px)
-      display: none
-
-@keyframes blink
-  50%
-    opacity: 0.0
-
-.copy
-  +span-columns(12 of 12)
-  +media($small)
-    +span-columns(8 of 12)
-  p.about, p.history, p.skills
-    display: none
-    +media($small)
-      display: none
-
 .projects#index
-  .name, .nav
+  header
     display: none
-  .overview
-    background-color: $background_dark
-    color: #fff
-    padding-bottom: 45px
-    a
-      color: #fff
+  .introduction
+    padding: $space-4 $space-3
+    +media($small)
+      padding: 150px $space-3 125px $space-3
+    p
+      font-size: 1.2em

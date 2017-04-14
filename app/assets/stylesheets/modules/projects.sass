@@ -1,0 +1,29 @@
+section
+  a.project-wrap
+    text-decoration: none
+    border-color: $primary
+  &.scrapbooks a.project-wrap, &.blogs a.project-wrap
+    +span-columns(12 of 12)
+    margin-bottom: $space-3
+    +media($medium)
+      @include omega-reset(2n)
+      +omega(3n)
+      +span-columns(4 of 12)
+  &.projects a.project-wrap
+    +span-columns(12 of 12)
+    margin-bottom: $space-3
+    +media($medium)
+      +omega(2n)
+      +span-columns(6 of 12)
+
+  .project
+    padding: $space-2
+    text-decoration: none
+    border: 1px solid #24292e
+    border-radius: 1px
+    min-height: 200px
+    p
+      max-width: 350px
+    h3
+      display: inline
+      text-decoration: underline

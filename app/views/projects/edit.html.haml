@@ -1,3 +1,6 @@
-%h1 Edit project
+%section
+  .section-inner
+    %h1 Edit project
 
-= render 'form'
+    = render 'form'
+    = link_to 'Destroy', project_path(@project), method: :delete, data: { confirm: 'Are you sure?' }

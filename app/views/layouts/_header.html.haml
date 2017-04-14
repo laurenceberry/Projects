@@ -1,11 +1,3 @@
 %header
-  .header-inner
-    .name.animated.bounceIn
-      %a{:href => root_path}
-        =t('basic.name')
-
-    / .links
-    /   -if t('lang') == 'English'
-    /     = link_to t('lang'), change_locale_path(:en), :class => 'lang-en'
-    /   -else
-    /     = link_to t('lang'), change_locale_path(:ja), :class => 'lang-ja'
+  .section-inner
+    = render 'layouts/details'

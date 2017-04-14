@@ -1,41 +1,13 @@
-.overlay
-  display: none
-  background-color: #fff
-  opacity: 0.7
-  position: fixed
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-  z-index: 2
-
 section
   width: 100%
   display: inline-block
+  padding: $space-3 0
   +span-columns(12)
-  a.project-wrap
-    text-decoration: none
-    +span-columns(12 of 12)
-    margin-bottom: 25px
-    +media($medium)
-      +omega(2n)
-      +span-columns(6 of 12)
-    +media($large)
-      @include omega-reset(2n)
-      +omega(3n)
-      +span-columns(4 of 12)
-  .project
-    padding: 15px
-    color: #000
-    text-decoration: none
-    border: 1px solid $primary
-    border-radius: 1px
-    &:hover h2
-      text-decoration: underline
 
 .section-inner
+  position: relative
   max-width: 1000px
   margin: auto
-  padding: 25px 25px
+  padding: $space-3
   @media (min-width: 1045px)
-    padding: 25px 0
+    padding: $space-3 0

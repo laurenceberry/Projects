@@ -22,14 +22,5 @@ ready = ->
     $('p.history').slideDown('slow', 'swing')
 
 
-
-  $('a.message').click ->
-    $('.contact-form').show().toggleClass('bounceInDown').toggleClass('bounceOutUp')
-    $('.overlay').fadeToggle()
-
-  $('.overlay').click ->
-    $('.contact-form.bounceInDown').toggleClass('bounceInDown').toggleClass('bounceOutUp')
-    $('.overlay').fadeToggle()
-
 $(document).ready(ready)
 $(document).on('page:load', ready)

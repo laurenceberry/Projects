@@ -3,9 +3,9 @@ class ProjectsController < ApplicationController
   http_basic_authenticate_with name: ENV['HTTP_USER'], password: ENV['HTTP_PASS'], except: [:index, :show]
 
   def index
-    @projects = Project.where(project_type: 'project').all
-    @prototypes = Project.where(project_type: 'prototype').all
-    @products = Project.where(project_type: 'product').all
+    @projects = Project.where(project_type: 'project').reverse.take(4)
+    @scrapbooks = Project.where(project_type: 'scrapbook').reverse.take(3)
+    @blogs = Project.where(project_type: 'blog').reverse.take(3)
   end
 
   def show
