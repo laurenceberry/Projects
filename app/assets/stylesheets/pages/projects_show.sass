@@ -1,4 +1,6 @@
 .projects#show
+  img
+    width: 100%
   .content
     +span-columns(12)
     +media($medium)
@@ -10,8 +12,16 @@
       +span-columns(6 of 12)
       +shift(1)
     img
-      width: 100%
+      cursor: pointer
     .image-group img
       +span-columns(3 of 6)
       margin-top: $space-3
-
+  #modal
+    display: none
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    text-align: right
+    background-color: $background
+    cursor: pointer

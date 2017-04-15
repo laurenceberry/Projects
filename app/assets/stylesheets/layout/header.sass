@@ -1,30 +1,30 @@
 header, footer
-  background-color: $background
   display: inline-block
   width: 100%
   font-size: 16px
-  .name
-    +span-columns(12)
-    +media($medium)
-      +span-columns(3 of 12)
-  ul
-    width: 100%
-    +media($medium)
-      +span-columns(3 of 12)
-    padding: 0
-    margin-top: 0
-    li
-      list-style: none
-
-  ul.navigation
-    +shift(3)
-
-header
-  margin-bottom: -6px
+  background-color: $background
   padding-bottom: $space-2
+  margin-bottom: -6px
   ul
-    display: none
+    +span-columns(12 of 12)
+    padding: 0
+    margin: 0 0 $space-3 0
+    +media($small)
+      margin: 0 0 $space-2 0
     +media($medium)
-      display: inline-block
+      +span-columns(3 of 12)
+  ul.navigation
+    margin-left: 0
+    +media($medium)
+      +shift(3)
+  li
+    list-style: none
+    margin-bottom: $space-2
+    +media($small)
+      margin-bottom: $space-1
+header .navigation, header .contact
+  display: none
+  +media($medium)
+    display: inline-block
 footer
   margin-top: $space-3

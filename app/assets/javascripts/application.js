@@ -15,5 +15,6 @@
 //= require analytics
 //= require turbolinks
 //= require repeatable_fields
+//= require modal
 //= require jquery.matchHeight
 //= require_tree .

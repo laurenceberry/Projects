@@ -10,8 +10,9 @@
         =markdown(block.text_block)
       - if block.image_primary.exists?
         .image
-          = image_tag block.image_primary.url(:medium)
+          = image_tag block.image_primary.url(:medium), :onclick => "showImage('#{block.image_primary.url(:large)}')"
           - if block.image_tertiary.exists?
             .image-group
-              = image_tag block.image_secondary.url(:medium)
-              = image_tag block.image_tertiary.url(:medium)
+              = image_tag block.image_secondary.url(:medium), :onclick => "showImage('#{block.image_secondary.url(:large)}')"
+              = image_tag block.image_tertiary.url(:medium), :onclick => "showImage('#{block.image_tertiary.url(:large)}')"
+= render 'layouts/modal'
