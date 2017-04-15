@@ -1,0 +1,30 @@
+header, footer
+  background-color: $background
+  display: inline-block
+  width: 100%
+  font-size: 16px
+  .name
+    +span-columns(12)
+    +media($medium)
+      +span-columns(3 of 12)
+  ul
+    width: 100%
+    +media($medium)
+      +span-columns(3 of 12)
+    padding: 0
+    margin-top: 0
+    li
+      list-style: none
+
+  ul.navigation
+    +shift(3)
+
+header
+  margin-bottom: -6px
+  padding-bottom: $space-2
+  ul
+    display: none
+    +media($medium)
+      display: inline-block
+footer
+  margin-top: $space-3

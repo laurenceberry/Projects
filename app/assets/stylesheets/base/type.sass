@@ -1,6 +1,6 @@
 body
   font-family: 'Lab'
-  font-size: 19px
+  font-size: 17px
   padding: 0
   margin: 0
   font-weight: 200
@@ -8,7 +8,7 @@ body
     box-sizing: border-box
 
 h1
-  font-size: 1.6em
+  font-size: 2em
   +media($small)
     font-size: 2.5em
   font-weight: 900
@@ -24,7 +24,7 @@ h3
   font-weight: 600
 
 p
-  font-size: 0.85em
+  font-size: 1em
   max-width: 650px
   margin: 0 0 $space-2 0
   font-weight: 400
@@ -35,7 +35,11 @@ p.secondary
 
 a
   color: #000
-  text-decoration-skip: ink
+  text-decoration: none
+  border-bottom: 1px solid $primary
+  transition: all 0.25s ease
+h1 a
+  border-bottom: 3px solid $primary
 
 blockquote
   margin: $space-4 0

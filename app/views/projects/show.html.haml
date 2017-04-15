@@ -1,26 +1,17 @@
-%section.overview
+%section
   .section-inner
     %h1=@project.title
-
-    %p=@project.intro
-    %p.secondary=@project.role
-    %p.secondary=@project.client
-
+    =@project.intro
 - @project.blocks.each do |block|
-  %section.block
-    - if block.image_primary.exists?
-      .image{:class => image_class(block)}
-        .primary= image_tag block.image_primary.url(:large)
-        .image-group
-          .secondary= image_tag block.image_secondary.url(:large)
-          .tertiary= image_tag block.image_tertiary.url(:medium)
-
+  %section
     .section-inner
       %h2=block.title
-      %p=markdown(block.text_block)
-
-/ .admin
-/   = link_to 'Edit', edit_project_path(@project)
-/   = link_to 'Destroy', project_path(@project), |
-/       method: :delete,                          |
-/       data: { confirm: 'Are you sure?' }        |
+      .content
+        =markdown(block.text_block)
+      - if block.image_primary.exists?
+        .image
+          = image_tag block.image_primary.url(:medium)
+          - if block.image_tertiary.exists?
+            .image-group
+              = image_tag block.image_secondary.url(:medium)
+              = image_tag block.image_tertiary.url(:medium)

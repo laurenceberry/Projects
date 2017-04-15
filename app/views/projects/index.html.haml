@@ -1,16 +1,15 @@
-.animated.fadeIn
-  = render 'pages/introduction'
-  %section.projects
-    %h2.visuallyhidden Portfolio
-    .section-inner
-      = render :partial => 'project', :collection => @projects
-  %section.scrapbooks
-    %h2.visuallyhidden Scrapbook
-    .section-inner
-      = render :partial => 'project', :collection => @scrapbooks
-      %a{href: ""} See more from the scrapbook
-  %section.blogs
-    %h2.visuallyhidden Weeknotes
-    .section-inner
-      = render :partial => 'project', :collection => @blogs
-      %a{href: ""} Read more weeknotes
+= render 'pages/introduction'
+%section.projects
+  %h2.visuallyhidden Portfolio
+  .section-inner
+    = render :partial => 'project', :collection => @projects
+%section.scrapbooks
+  %h2.visuallyhidden Scrapbook
+  .section-inner
+    = render :partial => 'project', :collection => @scrapbooks
+    %a{href: ""} See more from the scrapbook
+%section.blogs
+  %h2.visuallyhidden Weeknotes
+  .section-inner
+    = render :partial => 'project', :collection => @blogs
+    %a{href: ""} Read more weeknotes

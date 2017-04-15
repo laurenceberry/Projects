@@ -1,7 +1,7 @@
 section
   a.project-wrap
     text-decoration: none
-    border-color: $primary
+    border-bottom: 1px
   &.scrapbooks a.project-wrap, &.blogs a.project-wrap
     +span-columns(12 of 12)
     margin-bottom: $space-3
@@ -15,7 +15,6 @@ section
     +media($medium)
       +omega(2n)
       +span-columns(6 of 12)
-
   .project
     padding: $space-2
     text-decoration: none
@@ -26,4 +25,9 @@ section
       max-width: 350px
     h3
       display: inline
-      text-decoration: underline
+      border-bottom: 2px solid $primary
+  // &.blogs, &.scrapbooks
+  //   background-color: lighten(#6114CC, 45%)
+  //   .project
+  //     h3
+  //       border-bottom: 2px solid #6114CC

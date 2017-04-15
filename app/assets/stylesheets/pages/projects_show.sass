@@ -1,78 +1,17 @@
 .projects#show
-
-  section:nth-child(odd)
-    background-color: #F5F5F5
-
-  section.overview
-    padding-bottom: $space-3
-    a
-      color: #fff
-
-  .block
-    .image
-      overflow: hidden
-      display: inline-block
+  .content
+    +span-columns(12)
+    +media($medium)
+      +span-columns(5 of 12)
+  .image
+    +span-columns(12)
+    +shift(0)
+    +media($medium)
+      +span-columns(6 of 12)
+      +shift(1)
+    img
       width: 100%
-      img
-        width: 100%
-
-    .image
-      .primary, .secondary, .tertiary
-        display: none
-        font-size: 0
-        float: left
-
-      .primary
-        margin-bottom: -10px
-        +media($small)
-          margin-bottom: 0
-
-      .image-group
-        font-size: 0
-        float: left
-
-    .image.primary
-      .primary
-        display: block
-        width: 100%
-
-    .image.secondary
-      .primary, .image-group
-        width: 100%
-        display: block
-        +media($medium)
-          width: 50%
-      .image-group .secondary
-        width: 100%
-        display: block
-
-    .image.tertiary
-      .primary, .secondary, .tertiary
-        display: inline-block
-      .image-group
-        border-left: 1px solid #fff
-        .secondary
-          border-right: 1px solid #fff
-          border-bottom: none
-          +media($small)
-            border-bottom: 1px solid #fff
-            border-right: none
-
-    .image.tertiary
-      .primary, .image-group
-        width: 100%
-
-      +media($small)
-        .primary
-          width: 66.6666%
-        .image-group
-          width: 33.3333%
-      .secondary, .tertiary
-        width: 100%
-
-    .section-inner
-      padding: $space-3 $space-3 $space-4 $space-3
-      @media (min-width: 1045px)
-        padding: $space-3 0 $space-4 0
-
+    .image-group img
+      +span-columns(3 of 6)
+      margin-top: $space-3
 
