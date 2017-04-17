@@ -1,0 +1,5 @@
+= render partial: 'pages/introduction', locals: {type: "weeknotes"}
+%section.blogs
+  %h2.visuallyhidden Weeknotes
+  .section-inner
+    = render :partial => 'project', :collection => @blogs

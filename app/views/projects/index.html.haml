@@ -1,4 +1,4 @@
-= render 'pages/introduction'
+= render partial: 'pages/introduction', locals: {type: "index"}
 %section.projects
   %h2.visuallyhidden Portfolio
   .section-inner
@@ -7,9 +7,9 @@
   %h2.visuallyhidden Scrapbook
   .section-inner
     = render :partial => 'project', :collection => @scrapbooks
-    %a{href: ""} See more from the scrapbook
+    =link_to "See more from the scrapbook", "/scrapbook"
 %section.blogs
   %h2.visuallyhidden Weeknotes
   .section-inner
     = render :partial => 'project', :collection => @blogs
-    %a{href: ""} Read more weeknotes
+    =link_to "Read more weeknotes", "/weeknotes"

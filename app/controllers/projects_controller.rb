@@ -8,6 +8,14 @@ class ProjectsController < ApplicationController
     @blogs = Project.where(project_type: 'blog').reverse.take(3)
   end
 
+  def scrapbook
+    @scrapbooks = Project.where(project_type: 'scrapbook').reverse
+  end
+
+  def weeknotes
+    @blogs = Project.where(project_type: 'blog').reverse
+  end
+
   def show
     @project = Project.find(params[:id])
   end

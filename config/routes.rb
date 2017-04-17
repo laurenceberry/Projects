@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/scrapbook' => 'projects#scrapbook'
+  get '/weeknotes' => 'projects#weeknotes'
   resources :projects
 
   root 'projects#index'

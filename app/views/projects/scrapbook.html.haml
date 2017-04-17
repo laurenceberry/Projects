@@ -1,0 +1,5 @@
+= render partial: 'pages/introduction', locals: {type: "scrapbook"}
+%section.scrapbooks
+  %h2.visuallyhidden Scrapbook
+  .section-inner
+    = render :partial => 'project', :collection => @scrapbooks
