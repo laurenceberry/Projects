@@ -3,9 +3,9 @@ class ProjectsController < ApplicationController
   http_basic_authenticate_with name: ENV['HTTP_USER'], password: ENV['HTTP_PASS'], except: [:index, :show, :scrapbook, :weeknotes]
 
   def index
-    @projects = Project.where(project_type: 'project').reverse.take(4)
-    @scrapbooks = Project.where(project_type: 'scrapbook').reverse.take(3)
-    @blogs = Project.where(project_type: 'blog').reverse.take(3)
+    @projects = Project.where(project_type: 'project').order(:publish_date).reverse.take(4)
+    @scrapbooks = Project.where(project_type: 'scrapbook').order(:publish_date).reverse.take(3)
+    @blogs = Project.where(project_type: 'blog').order(:publish_date).reverse.take(3)
   end
 
   def scrapbook
@@ -65,6 +65,7 @@ private
         :role,
         :client,
         :project_type,
+        :publish_date,
         blocks_attributes: [
           :id,
           :title,
