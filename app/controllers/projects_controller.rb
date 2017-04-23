@@ -3,17 +3,17 @@ class ProjectsController < ApplicationController
   http_basic_authenticate_with name: ENV['HTTP_USER'], password: ENV['HTTP_PASS'], except: [:index, :show, :scrapbook, :weeknotes]
 
   def index
-    @projects = Project.where(project_type: 'project').order(:publish_date).limit(4)
-    @scrapbooks = Project.where(project_type: 'scrapbook').order(:publish_date).limit(3)
-    @blogs = Project.where(project_type: 'blog').order(:publish_date).limit(3)
+    @projects = Project.where(project_type: 'project').order(:publish_date).take(4).reverse
+    @scrapbooks = Project.where(project_type: 'scrapbook').order(:publish_date).take(3).reverse
+    @blogs = Project.where(project_type: 'blog').order(:publish_date).take(3).reverse
   end
 
   def scrapbook
-    @scrapbooks = Project.where(project_type: 'scrapbook').reverse
+    @scrapbooks = Project.where(project_type: 'scrapbook')
   end
 
   def weeknotes
-    @blogs = Project.where(project_type: 'blog').reverse
+    @blogs = Project.where(project_type: 'blog')
   end
 
   def show
