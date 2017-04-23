@@ -3,21 +3,21 @@ class ProjectsController < ApplicationController
   http_basic_authenticate_with name: ENV['HTTP_USER'], password: ENV['HTTP_PASS'], except: [:index, :show, :scrapbook, :weeknotes]
 
   def index
-    @projects = Project.where(project_type: 'project').reorder("publish_date DESC").limit(4)
-    @scrapbooks = Project.where(project_type: 'scrapbook').reorder("publish_date DESC").limit(3)
-    @blogs = Project.where(project_type: 'blog').order(:publish_date).reorder("publish_date DESC").limit(3)
+    @projects = Project.friendly.where(project_type: 'project').reorder("publish_date DESC").limit(4)
+    @scrapbooks = Project.friendly.where(project_type: 'scrapbook').reorder("publish_date DESC").limit(3)
+    @blogs = Project.friendly.where(project_type: 'blog').order(:publish_date).reorder("publish_date DESC").limit(3)
   end
 
   def scrapbook
-    @scrapbooks = Project.where(project_type: 'scrapbook').reorder("publish_date DESC")
+    @scrapbooks = Project.friendly.where(project_type: 'scrapbook').reorder("publish_date DESC")
   end
 
   def weeknotes
-    @blogs = Project.where(project_type: 'blog').reorder("publish_date DESC")
+    @blogs = Project.friendly.where(project_type: 'blog').reorder("publish_date DESC")
   end
 
   def show
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
 
   def new
@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
 
   def create
@@ -39,7 +39,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
 
     if @project.update(project_params)
       redirect_to @project
@@ -49,7 +49,7 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
     @project.destroy
 
     redirect_to projects_path

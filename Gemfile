@@ -46,7 +46,7 @@ gem 'mail_form'
 gem 'simple_form'
 
 gem "redcarpet"
-
+gem 'friendly_id', '~> 5.1.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
