@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20170423163124) do
     t.text     "intro"
     t.string   "role"
     t.string   "client"
-    t.date     "publish_date"
+    t.datetime "publish_date"
   end
 
 end
