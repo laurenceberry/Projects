@@ -1,0 +1,26 @@
+#about
+  .introduction
+    background-color: transparent
+    position: relative
+    .overlay, .image
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+    .overlay
+      background-color: $background
+      opacity: 0.5
+    .image
+      background-image: url("asobe.jpg")
+      background-size: 100%
+      background-position: center
+
+  .image
+    +span-columns(6)
+    img 
+      width: 100%
+  .content
+    +span-columns(6)

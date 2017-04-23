@@ -15,4 +15,5 @@
             .image-group
               = image_tag block.image_secondary.url(:medium), :onclick => "showImage('#{block.image_secondary.url(:large)}')"
               = image_tag block.image_tertiary.url(:medium), :onclick => "showImage('#{block.image_tertiary.url(:large)}')"
-= render 'layouts/modal'
+          - elsif block.image_secondary.exists?
+            = image_tag block.image_secondary.url(:medium), :onclick => "showImage('#{block.image_secondary.url(:large)}')"

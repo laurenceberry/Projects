@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/about'     => 'pages#about'
   get '/scrapbook' => 'projects#scrapbook'
   get '/weeknotes' => 'projects#weeknotes'
   resources :projects

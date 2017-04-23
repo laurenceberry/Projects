@@ -8,20 +8,12 @@
   .image
     +span-columns(12)
     +shift(0)
+    margin-top: $space-2
     +media($medium)
       +span-columns(6 of 12)
       +shift(1)
     img
       cursor: pointer
+      margin-bottom: $space-3
     .image-group img
       +span-columns(3 of 6)
-      margin-top: $space-3
-  #modal
-    display: none
-    position: fixed
-    top: 0
-    width: 100%
-    height: 100%
-    text-align: right
-    background-color: $background
-    cursor: pointer

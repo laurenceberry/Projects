@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
 
-  http_basic_authenticate_with name: ENV['HTTP_USER'], password: ENV['HTTP_PASS'], except: [:index, :show]
+  http_basic_authenticate_with name: ENV['HTTP_USER'], password: ENV['HTTP_PASS'], except: [:index, :show, :scrapbook, :weeknotes]
 
   def index
     @projects = Project.where(project_type: 'project').reverse.take(4)

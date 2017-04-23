@@ -5,6 +5,8 @@
     = render :partial => 'layouts/head_items'
   %body{:class => "#{controller_name}", :id => "#{action_name}"}
     = render :partial => 'layouts/header'
-    %main= yield
+    %main
+      = yield
+      = render 'layouts/modal'
     = render :partial => 'layouts/google_analytics'
     = render :partial => 'layouts/footer'
