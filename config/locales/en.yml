@@ -17,10 +17,14 @@ en:
         to approach some of the tough problems faced by governments, and citizens around adult social care. I've been involved
         in hacks and rapid prototyping with Rewired State and Rebel Labs for clients including The Cabinet Office, IBM, Wired, Conde Nast, Goodyear, Wimbledon.
 
+    long_bio:
+      about: >
+        Designer at the %{href} helping to build simpler, clearer, faster services.
+        I think a lot about accessibility and research led design and development. It's important to understand users' needs to develop useful prototypes and digital services.
+        
       gds_href: Government Digital Service
       cargo_collective_href: graphic and communication design
       futuregov_href: FutureGov
-
 
   nav:
     back: "Go back"
