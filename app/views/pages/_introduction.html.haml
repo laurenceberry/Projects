@@ -7,4 +7,5 @@
         Scrapbook
       - elsif type == "weeknotes"
         Weeknotes
-    =link_to "Read more", "/about", class: "desktophidden"
+    - if type == "index"
+      =link_to "Read more", "/about", class: "desktophidden"
